@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hazel-services"
+version = "0.1.dev0"
+description = "A service layer library for the hazel toolkit"
+authors = ["Abdul-Hakeem Shaibu <hkmshb@gmail.com>"]
+keywords = ["hazel", "services"]
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+"zope.interface" = "^4.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
+pytest-cov = "^2.5"
