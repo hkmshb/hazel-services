@@ -1,5 +1,5 @@
-from hazel_services import __version__
+from hazel_services import get_version
 
 
 def test_version():
-    assert __version__ == '0.1.dev0'
+    assert get_version() == '0.1.dev0'

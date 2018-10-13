@@ -7,10 +7,50 @@ keywords = ["hazel", "services"]
 license = "BSD-2-Clause"
 readme = "README.md"
 
+
 [tool.poetry.dependencies]
 python = "^3.6"
 "zope.interface" = "^4.5"
 
+
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
 pytest-cov = "^2.5"
+
+
+[tool.poetry.scripts]
+
+
+[tool.black]
+line-length = 79
+check = true
+diff = true
+skip-string-normalization = true
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+skipsdist = true
+envlist = lint, py36
+
+[testenv]
+whitelist_externals =
+    bash
+    poetry
+skip_install = true
+commands =
+    bash ./prepare-toxenv.sh {envbindir} {toxinidir}
+    poetry run py.test --cov-report term-missing --cov=hazel_services tests
+
+[testenv:lint]
+whitelist_externals =
+    bash
+    poetry
+skip_install = true
+deps =
+    pylint
+commands =
+    bash ./prepare-toxenv.sh {envbindir} {toxinidir}
+    pylint --rcfile={toxinidir}/.pylintrc {toxinidir}/src/hazel_services {toxinidir}/tests
+"""
