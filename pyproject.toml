@@ -16,6 +16,7 @@ python = "^3.6"
 [tool.poetry.dev-dependencies]
 pytest = "^3.5"
 pytest-cov = "^2.5"
+pre-commit = "^1.11"
 
 
 [tool.poetry.scripts]
