@@ -211,6 +211,18 @@ version = "16.0.0"
 
 [[package]]
 category = "main"
+description = "An inversion-of-control (IoC) container."
+name = "wired"
+optional = false
+platform = "*"
+python-versions = ">=3.4"
+version = "0.1.1"
+
+[package.dependencies]
+"zope.interface" = "*"
+
+[[package]]
+category = "main"
 description = "Interfaces for Python"
 name = "zope.interface"
 optional = false
@@ -222,7 +234,7 @@ version = "4.5.0"
 setuptools = "*"
 
 [metadata]
-content-hash = "334b5d425d5f3de397083af6303800cf064c536d640056847f02f18004d6e6f9"
+content-hash = "97602452701ca88fcd46233828fe9251983fe481bfcb8340d98d64c241f7d66a"
 platform = "*"
 python-versions = "^3.6"
 
@@ -246,4 +258,5 @@ pyyaml = ["3d7da3009c0f3e783b2c873687652d83b1bbfd5c88e9813fb7e5b03c0dd3108b", "3
 six = ["70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9", "832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"]
 toml = ["229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c", "235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e", "f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"]
 virtualenv = ["2ce32cd126117ce2c539f0134eb89de91a8413a29baac49cbab3eb50e2026669", "ca07b4c0b54e14a91af9f34d0919790b016923d157afda5efdde55c96718f752"]
+wired = ["84a88078256656f8f853ebc3d23f3871997b07f5357faa8df6176bfae118c272", "f238ebb8597acb488727cab461a8a40edd3a27db5cc699d18c796b6de03ab540"]
 "zope.interface" = ["21506674d30c009271fe68a242d330c83b1b9d76d62d03d87e1e9528c61beea6", "3d184aff0756c44fff7de69eb4cd5b5311b6f452d4de28cb08343b3f21993763", "467d364b24cb398f76ad5e90398d71b9325eb4232be9e8a50d6a3b3c7a1c8789", "57c38470d9f57e37afb460c399eb254e7193ac7fb8042bd09bdc001981a9c74c", "9ada83f4384bbb12dedc152bcdd46a3ac9f5f7720d43ac3ce3e8e8b91d733c10", "a1daf9c5120f3cc6f2b5fef8e1d2a3fb7bbbb20ed4bfdc25bc8364bc62dcf54b", "e6b77ae84f2b8502d99a7855fa33334a1eb6159de45626905cb3e454c023f339", "e881ef610ff48aece2f4ee2af03d2db1a146dc7c705561bd6089b2356f61641f", "f41037260deaacb875db250021fe883bf536bf6414a4fd25b25059b02e31b120"]

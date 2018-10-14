@@ -11,6 +11,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.6"
 "zope.interface" = "^4.5"
+wired = "^0.1.1"
 
 
 [tool.poetry.dev-dependencies]

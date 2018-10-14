@@ -13,4 +13,4 @@ poetry install -v
 poetry build -f wheel
 
 pkg_name=$(ls ./dist | grep .whl)
-${envbindir}/pip install ${toxinidir}/dist/${pkg_name}
+${envbindir}/pip install -U ${toxinidir}/dist/${pkg_name}

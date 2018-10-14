@@ -9,4 +9,5 @@ repos:
   rev: v2.1.1
   hooks:
   - id: pylint
-    args: [--rcfile=.pylintrc]
+    args: [--rcfile=./.pylintrc]
+    additional_dependencies: [pytest, wired, zope.interface]
